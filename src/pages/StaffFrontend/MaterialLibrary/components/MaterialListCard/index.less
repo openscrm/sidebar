@@ -1,0 +1,133 @@
+
+.materialList {
+  margin-top: 6px;
+
+  .materialItem {
+    gap: 0 !important;
+    width: 100%;
+    margin-bottom: 0;
+    border-bottom: 1px dashed rgba(0, 0, 0, .08);
+  }
+}
+
+.sendButtonWrap {
+  .sendButton {
+    :global {
+      .anticon {
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        background: #1890ff;
+        color: white;
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+      }
+    }
+  }
+}
+
+.materialPreview {
+  gap: 0 !important;
+  display: flex;
+  width: 100%;
+  margin: 8px 0;
+
+  .leftPart {
+    margin: 4px 0;
+
+    img {
+      width: 36px;
+    }
+  }
+
+  .rightPart {
+    margin-left: 5px;
+    font-size: 12px;
+
+    .title {
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .desc {
+      color: #6b7a88;
+      margin-bottom: 4px;
+    }
+  }
+}
+
+
+.tagList {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  justify-content: flex-start;
+  position: relative;
+
+  .tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f1faff;
+    border-radius: 4px;
+    padding: 2px 4px;
+    border: 1px solid #f1faff;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    color: #6b7a88;
+    font-size: 13px;
+    cursor: default;
+  }
+}
+
+.overlay {
+  position: relative;
+  width: 300px;
+  height: auto;
+  padding: 0 8px 16px 8px;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+
+  .overlayTitle {
+    margin-bottom: 5px;
+    padding: 12px 0;
+  }
+
+  .buttonBox {
+    position: absolute;
+    right: 16px;
+    bottom: 10px;
+  }
+
+  :global {
+    .tag-item {
+      color: #6b7a88;
+      padding: 4px 8px;
+      font-size: 13px;
+      text-align: center;
+      margin-bottom: 8px;
+      background-color: rgb(241, 250, 255);
+      border: 1px solid rgb(241, 250, 255);
+    }
+
+    .selected-tag-item {
+      color: @primary-color;
+      border: 1px solid @primary-color;
+    }
+  }
+}
+
+.filterBar {
+  display: flex;
+  margin-top: 12px;
+}
+
+.searchBar {
+  display: flex;
+  justify-content: space-between;
+}
